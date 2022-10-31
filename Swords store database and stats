@@ -1,0 +1,12 @@
+Create table swords (id integer primary key, name text, quantity integer, cost integer);
+
+insert into swords values (1,"katana", 3, 75);
+insert into swords values (2,"tanto", 5, 45);
+insert into swords values (3,"buster blade", 4, 100);
+insert into swords values (4,"cutlass", 3, 65);
+insert into swords values (5,"laser", 1, 150);
+SELECT * FROM swords where quantity >=2 order by cost;
+
+--display the database ordered by cost. 
+SELECT * FROM swords
+ORDER BY cost desc; 
